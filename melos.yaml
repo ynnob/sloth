@@ -1,6 +1,5 @@
 name: sloth
-
-#repository: https://github.com/invertase/melos
+repository: https://github.com/ynnob/sloth
 
 ide:
   intellij:

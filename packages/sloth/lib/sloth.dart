@@ -1,8 +1,5 @@
-/// Support for doing something awesome.
-///
-/// More dartdocs go here.
+/// Sloth core package
+/// Includes all sloth extensions
 library sloth;
 
 export 'src/sloth_base.dart';
-
-// TODO: Export any libraries intended for clients of this package.
