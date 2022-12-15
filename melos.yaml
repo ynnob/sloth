@@ -41,15 +41,15 @@ scripts:
     exec: flutter format . --set-exit-if-changed
     description: Run `flutter format` checks for all packages.
 
-  # version: dart run scripts/generate_version.dart
+  version: dart run scripts/generate_version.dart
 
-  # activate:
-  #   description: Activate the local version of melos for development.
-  #   run: dart pub global activate --source="path" . --executable="melos" --overwrite
+  activate:
+    description: Activate the local version of melos for development.
+    run: dart pub global activate --source="path" . --executable="melos" --overwrite
 
-  # activate:pub:
-  #   description: Activate the published version of melos.
-  #   run: dart pub global activate melos --overwrite
+  activate:pub:
+    description: Activate the published version of melos.
+    run: dart pub global activate melos --overwrite
 
 command:
   version:
