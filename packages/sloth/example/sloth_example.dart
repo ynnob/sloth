@@ -1,6 +1,11 @@
 import 'package:sloth/sloth.dart';
 
 void main() {
-  var awesome = Awesome();
-  print('awesome: ${awesome.isAwesome}');
+  /////////////////////////////////
+  // sloth_datetime extensions
+  /////////////////////////////////
+
+  // get secondsSinceEpoch
+  int seconds = DateTime.now().secondsSinceEpoch;
+  print("Seconds since epoch $seconds s");
 }

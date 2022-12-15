@@ -2,4 +2,4 @@
 /// Includes all sloth extensions
 library sloth;
 
-export 'src/sloth_base.dart';
+export 'package:sloth_datetime/sloth_datetime.dart';
