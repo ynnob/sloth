@@ -1,0 +1,23 @@
+name: sloth
+
+#repository: https://github.com/invertase/melos
+
+ide:
+  intellij:
+    enabled: false
+
+packages:
+  # PLUGINS
+  - packages/*
+
+scripts:
+  analyze:
+    exec: dart analyze .
+
+  upgrade:
+    exec: dart pub upgrade .
+
+command:
+  version:
+    branch: main
+    releaseUrl: true
