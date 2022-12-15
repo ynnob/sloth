@@ -1,6 +1,6 @@
 import 'package:sloth_datetime/sloth_datetime.dart';
 
 void main() {
-  var awesome = Awesome();
-  print('awesome: ${awesome.isAwesome}');
+  // get secondsSinceEpoch
+  int seconds = DateTime.now().secondsSinceEpoch;
 }
