@@ -11,29 +11,39 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+# ARE YOU A SLOTH? - SLOTH CORE
+
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- DateTime extension:
+    - secondsSinceEpoch
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+With dart:
+```dart
+ $ dart pub add sloth
+```
+
+With Flutter:
+```dart
+ $ flutter pub add sloth
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+Import the package
 
 ```dart
-const like = 'sample';
+import 'package:sloth/sloth.dart';
 ```
 
-## Additional information
+Access the extensions:
+```dart
+  // get secondsSinceEpoch
+  int seconds = DateTime.now().secondsSinceEpoch;
+  print("Seconds since epoch $seconds s");
+```
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+
