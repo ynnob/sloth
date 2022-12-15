@@ -2,15 +2,12 @@ import 'package:sloth_datetime/sloth_datetime.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group('A group of tests', () {
-    final awesome = Awesome();
+  group('DateTime Extension Test', () {
+    test('Test secondsSinceEpoch', () {
+      int millisecondsSinceEpoch = DateTime.now().millisecondsSinceEpoch;
+      int secondsSinceEpoch = DateTime.now().secondsSinceEpoch;
 
-    setUp(() {
-      // Additional setup goes here.
-    });
-
-    test('First Test', () {
-      expect(awesome.isAwesome, isTrue);
+      expect(secondsSinceEpoch, (millisecondsSinceEpoch / 1000).round());
     });
   });
 }
