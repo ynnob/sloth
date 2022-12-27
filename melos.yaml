@@ -6,12 +6,21 @@ ide:
     enabled: false
 
 packages:
-  # PLUGINS
+  - .
   - packages/*
 
 scripts:
   upgrade:
-    exec: dart pub upgrade .
+    run: dart pub upgrade
+    exec:
+      concurrency: 1
+
+  build:
+    run: dart run build_runner build --delete-conflicting-outputs
+    exec:
+      concurrency: 1
+    select-package:
+      depends-on: build_runner
 
   analyze:
     run: dart analyze . --fatal-infos
@@ -41,16 +50,6 @@ scripts:
     exec: flutter format . --set-exit-if-changed
     description: Run `flutter format` checks for all packages.
 
-  version: dart run scripts/generate_version.dart
-
-  activate:
-    description: Activate the local version of melos for development.
-    run: dart pub global activate --source="path" . --executable="melos" --overwrite
-
-  activate:pub:
-    description: Activate the published version of melos.
-    run: dart pub global activate melos --overwrite
-
 command:
   version:
     # Generate commit links in package changelogs.
@@ -59,3 +58,6 @@ command:
     branch: master
     # Additionally build a changelog at the root of the workspace.
     workspaceChangelog: true
+  # activate new bootstrapping mechanism
+  bootstrap:
+    usePubspecOverrides: true

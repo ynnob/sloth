@@ -9,6 +9,7 @@ environment:
 
 dependencies:
   sloth_datetime: ^1.0.0
+  sloth_link_crawler: ^0.0.1
 
 dev_dependencies:
   lints: ^2.0.0
