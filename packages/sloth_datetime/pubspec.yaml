@@ -1,6 +1,6 @@
 name: sloth_datetime
 description: Extensions for the DateTime class
-version: 1.0.0+1
+version: 1.0.0
 homepage: https://ynnob.com
 repository: https://github.com/ynnob/sloth/tree/master/packages/sloth_datetime
 
