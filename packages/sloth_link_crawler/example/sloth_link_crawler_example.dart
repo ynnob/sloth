@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable, prefer_final_locals, omit_local_variable_types
+
 import 'package:sloth_link_crawler/sloth_link_crawler.dart';
 
 void main() async {

@@ -1,10 +1,8 @@
 import 'dart:io';
 
 import 'package:http_interceptor/http/interceptor_contract.dart';
-import 'package:http_interceptor/models/response_data.dart';
 import 'package:http_interceptor/models/request_data.dart';
-import 'package:yaml/yaml.dart';
-import 'dart:io';
+import 'package:http_interceptor/models/response_data.dart';
 
 class CrawlerInterceptor implements InterceptorContract {
   String userAgent;

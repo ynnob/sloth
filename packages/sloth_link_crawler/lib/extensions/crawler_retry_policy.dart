@@ -1,8 +1,8 @@
-import 'package:http/http.dart';
 import 'package:http_interceptor/http_interceptor.dart';
 
 class CrawlerRetryPoliciy extends RetryPolicy {
   @override
+  // ignore: overridden_fields
   int maxRetryAttempts = 5;
 
   @override

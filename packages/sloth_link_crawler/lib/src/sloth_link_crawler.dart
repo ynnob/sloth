@@ -1,8 +1,6 @@
 import 'dart:async';
-import 'dart:developer';
 
 import 'package:beautiful_soup_dart/beautiful_soup.dart';
-import 'package:http/http.dart' as http;
 import 'package:http_interceptor/http_interceptor.dart';
 import 'package:queue/queue.dart';
 import 'package:robots_txt/robots_txt.dart';
