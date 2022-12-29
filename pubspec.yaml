@@ -1,6 +1,6 @@
 name: sloth
 description: Sloth combines all current and future packages provided under the sloth name. You can import sloth to have access to all class extensions or add the individual packages to your pubspec.yaml file.
-version: 1.0.1+1
+version: 1.0.2
 homepage: https://ynnob.com
 repository: https://github.com/ynnob/sloth
 
@@ -9,7 +9,7 @@ environment:
 
 dependencies:
   sloth_datetime: ^1.0.0+1
-  sloth_link_crawler: ^0.0.1
+  sloth_link_crawler: ^0.0.2
 
 dev_dependencies:
   lints: ^2.0.0

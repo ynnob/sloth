@@ -16,8 +16,10 @@ and the Flutter guide for
 
 ## Features
 
-- DateTime extension:
+- sloth_datetime
+  - DateTime extension:
     - secondsSinceEpoch
+- slot_link_crawler
 
 ## Getting started
 
@@ -39,11 +41,27 @@ Import the package
 import 'package:sloth/sloth.dart';
 ```
 
-Access the extensions:
+### sloth_datetime
 ```dart
   // get secondsSinceEpoch
   int seconds = DateTime.now().secondsSinceEpoch;
   print("Seconds since epoch $seconds s");
 ```
 
+### slot_link_crawler
+```dart
+  final crawler = SlothLinkCrawler(
+      // Domain to crawl
+      baseUrl: 'https://example.com',
+      // if true only urls of the domain will get listed
+      onlyInternalDomainLinks: true,
+      // if true some debugging information will be displayed in the console
+      debugMode: true,
+      // set the duration between crawl calls
+      duration: const Duration(seconds: 2),
+      // set a custom user agent
+      userAgent: 'SlothLinkCrawler');
 
+  // List of all crawled urls
+  List<String> result = await crawler.crawl();
+```
